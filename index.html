@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit Together</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Fit Buddy</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Competitions</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="signup">
+    <h2>Join the Community</h2>
+    <form id="signup-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="confirmation-message" style="display: none; color: green; margin-top: 10px;">Thank you for signing up!</p>
+  </section>
+  <section id="leaderboard">
+    <h2>Leaderboard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard-body">
+        <!-- Rows will be added dynamically using JavaScript -->
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- Main Content -->
+  <main>
+    <section id="welcome">
+      <h2>Welcome to Fit Together</h2>
+      <p>Join a global community to lose weight, work out, and eat healthy together!</p>
+      <button>Get Started</button>
+    </section>
+
+    <section id="features">
+      <h3>Our Features</h3>
+      <ul>
+        <li>Live workout sessions</li>
+        <li>Community forums</li>
+        <li>Competitions with exciting prizes</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Fit Together. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+<section id="live-sessions">
+  <h2>Live Workout Sessions</h2>
+  <p>Schedule and join live workout sessions with others.</p>
+  <form id="schedule-form">
+    <label for="session-name">Session Name:</label>
+    <input type="text" id="session-name" name="session-name" placeholder="Enter session name" required>
+    <label for="session-time">Time:</label>
+    <input type="datetime-local" id="session-time" name="session-time" required>
+    <button type="submit">Schedule</button>
+  </form>
+  <h3>Upcoming Sessions</h3>
+  <ul id="sessions-list">
+    <!-- Sessions will be dynamically added here -->
+  </ul>
+</section>
+<section id="auth">
+  <h2>User Authentication</h2>
+  <div id="auth-forms">
+    <!-- Login Form -->
+    <form id="login-form">
+      <h3>Login</h3>
+      <label for="login-email">Email:</label>
+      <input type="email" id="login-email" name="login-email" placeholder="Enter your email" required>
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signup-form-auth">
+      <h3>Sign Up</h3>
+      <label for="signup-name">Name:</label>
+      <input type="text" id="signup-name" name="signup-name" placeholder="Enter your name" required>
+      <label for="signup-email">Email:</label>
+      <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email" required>
+      <label for="signup-password">Password:</label>
+      <input type="password" id="signup-password" name="signup-password" placeholder="Create a password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <p id="auth-message" style="display: none; color: green; margin-top: 10px;"></p>
+</section>
+
+
+
